@@ -9452,8 +9452,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /********** Template CSS ************/
+@font-face {
+  font-family: 'Gallient';
+  src: url('../src/Gallient.ttf')
+  format('truetype');
+}
+
 .font-secondary {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Gallient';
 }
 
 .btn-square {
@@ -9661,6 +9667,15 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 30px;
 }
 
+.rounded-circle {
+  border-radius: 50%; /* Membuat elemen menjadi lingkaran */
+}
+
+.border {
+  border-radius: 20px; /* Menambahkan radius ke kotak */
+}
+
+
 @media (min-width: 768px) {
   .timeline::after {
     position: absolute;
@@ -9699,6 +9714,7 @@ a.text-dark:hover, a.text-dark:focus {
 .gallery-item {
   position: relative;
   overflow: hidden;
+  border: 6px solid #ccc; /* Ubah ukuran dan warna sesuai kebutuhan */
 }
 
 .gallery-item img {
